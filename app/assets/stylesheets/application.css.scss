@@ -39,7 +39,7 @@ h1, h2, h3 {
 // Updating logo and website name on navigation bar to make it look professional
 .navbar-brand {
   font-family: 'Roboto', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 // got class name from inspect tool on google chrome
@@ -50,6 +50,21 @@ h1, h2, h3 {
   &:hover {
     color: white;
     opacity: 0.75;
+  }
+}
+
+// changing color of mobile navigation button
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+// increasing border of mobile navigation button
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  // using Sass method, "&:"
+  // changing color of hover and focus of mobile navigation button
+  &:hover, &:focus {
+    background-color: #3E5151; // just got color from gradient, look above
   }
 }
 
