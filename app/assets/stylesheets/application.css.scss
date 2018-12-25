@@ -36,11 +36,17 @@ h1, h2, h3 {
   border: none;
 }
 
+// Updating logo and website name on navigation bar to make it look professional
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
 // got class name from inspect tool on google chrome
 // looked at parent class/specificity
 // "About", "DevMatch"
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-  color: white; 
+  color: white;
   &:hover {
     color: white;
     opacity: 0.75;
